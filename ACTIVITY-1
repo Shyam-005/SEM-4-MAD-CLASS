@@ -1,0 +1,25 @@
+import React from 'react';
+import { Text, Image, View, TouchableOpacity, Pressable, Button, Alert,SafeAreaViewBase} from "react-native";
+const app = () => { 
+  return(
+    <SafeAreaViewBase>
+    <View>
+        <> <Text>hello world</Text>
+    <Image 
+   source={{uri : "https://img.escape.no/uploads/dam/images-13/20250812091306/india_taj_mahal.jpg?quality=70&width=1800&height=1433&crop=1941%2C1545%2C0%2C0" }}
+   /> </>
+   <Button title='Click Me'></Button>
+
+   <TouchableOpacity
+   onPress={() => Alert.alert("Touchable Pressed")}
+   ><Text> ME Touchable </Text> </TouchableOpacity>
+
+   <Pressable> <Text> Me Pressable</Text></Pressable>
+
+    </View>
+   
+   </SafeAreaViewBase> 
+  )
+  
+
+}
